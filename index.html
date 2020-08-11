@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./images/diamond-logo-template-vector-19306387.png" /> 
+    <title>Memotify</title>
+</head>
+<body>
+    <div class="container">
+
+        <form class="form" id="form">
+            <h1 class="title">Memotify</h1>
+            <p class="title-details">Send A Secret Encrypted Message To Your Friends</p>
+
+
+            <div class="name">
+                <label for="input-name">Enter Your Name</label>
+                <input type="text" id="input-name" placeholder="Optional">
+                <small></small>
+            </div>
+            <div class="message">
+                <label for="input-message">Enter A Message</label>
+                <input type="text" id="input-message" placeholder="Enter Secret Message">
+                <small></small>
+            </div>
+            <div class="message-show message-show-hide">
+                <label for="display-message">Your Message Link</label>
+                <input type="text" id="display-message" placeholder="Share With Friend">
+                
+            </div>
+
+            <div class="final-output is-hide">
+                <p class="actual-message">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, obcaecati.</p>
+                <h2 class="sender"></h2>
+                <h3>@HarrisK</h3>
+                <button class="create-own"><a href="">Create New</a></button>
+            </div>
+        </form>
+
+        <button id="submit">Submit</button>
+        <p class="credit">Created by HarrisK</p>
+
+
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

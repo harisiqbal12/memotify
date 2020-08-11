@@ -1,0 +1,229 @@
+:root {
+    --primary-color: #293241;
+    --secondary-color: #212529;
+    --background-color: #06d6a0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(0,168,150);
+    background: linear-gradient(87deg, rgba(0,168,150,1) 46%, rgba(6,214,160,1) 100%);
+    font-weight: 700;
+    font-family: 'lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+    max-height: 450px;
+    max-width: 600px;
+    height: 450px;
+    width: 400px;
+    border: 2px solid transparent;
+    background-image: linear-gradient(var(--secondary-color), var(--secondary-color)), radial-gradient(circle at top left, #06d6a0, #19d7f8);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.9);
+}
+
+
+.form {
+    padding: 50px 50px;
+}
+
+.form label {
+    display: block;
+    color: aliceblue;
+    margin-bottom: 10px;
+}
+
+.form input {
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    padding: 15px;
+    
+    width: 100%;
+    color: white;
+}
+
+.form input:focus {
+    border: 2px solid rgba(0,168,150, 1);
+    transition: border 1s;
+}
+
+.form input:focus {
+    outline: none;
+}
+
+.name {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.container button {
+    cursor: pointer;
+    border-radius: 15px;
+    border: 2px solid transparent;
+    background-image: linear-gradient(var(--secondary-color), var(--secondary-color)), radial-gradient(circle at top left, #06d6a0, #19d7f8);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    position: static;
+    margin-left: 120px;
+    width: 150px;
+    color: white;
+    height: 50px;
+}
+
+.container button:focus {
+    outline: none;
+}
+
+.container button:active {
+    transform: scale(0.95);
+}
+
+.title {
+    margin-bottom: -30px;
+    display: block;
+    position: relative;
+    bottom: 30px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+.title-details {
+    color: white;
+    display: block;
+    text-align: center;
+    position: relative;
+    top: 12px;
+
+    font-size: 10px;
+}
+
+.credit {
+    color: white;
+    text-align: right;
+    font-size: 8px;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 40px;
+    width: 380px;
+
+}
+
+.is-hide {
+    display: none;
+}
+
+.message-show a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+.message-show {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 40vh;
+    margin-top: 50px;
+}
+
+.message-show button {
+    display: block;
+
+    margin-top: 150px;
+    margin-left: 80px;
+}
+
+.message-show-hide {
+    display: none;
+}
+
+.sender {
+    color: white;
+    text-align: center;
+    display: block;
+    margin-top: 50px;
+    font-size: 10px;
+}
+
+.actual-message {
+    
+    position: relative;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding-top: 130px;
+}
+
+.final-output h3 {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 130px;
+}
+
+.final-output button {
+    display: block;
+    position: relative;
+    bottom: 100px;
+    right: 40px;
+    align-items: center;
+}
+
+.final-output button a {
+    text-decoration: none;
+    color: white;
+}
+
+
+@media(max-width: 600px ) {
+    
+    .container {
+        width: 300px;
+    }
+    .container button {
+        
+        position: static;
+        margin-left: 80px;
+    }
+    .form input {
+        width: 250px;
+        position: static;
+        
+        margin-left: -25px;
+    }
+    .form label {
+        position: static;
+        margin-left: -20px;
+    }
+    .credit {
+        width: 280px;
+        height: 20px;
+    }
+
+    .final-output button {
+        position: relative;
+        top: -13vh;
+        right:  7.5vh;
+        
+    }
+
+    
+}
